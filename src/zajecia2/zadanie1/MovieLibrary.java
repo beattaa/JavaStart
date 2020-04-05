@@ -8,6 +8,7 @@ class MovieLibrary {
                 "z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.";
         movie.director = "Robert Zemeckis";
         movie.rating = 9;
+        movie.oscars = true;
 
         System.out.println("Informacje o filmie:");
         System.out.printf("Tytuł: %s\n", movie.title);
