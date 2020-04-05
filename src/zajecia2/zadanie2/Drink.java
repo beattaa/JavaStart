@@ -6,7 +6,7 @@ public class Drink {
     String name;
     double price;
     boolean isWithAlcohol;
-    Ingredient[] ingredients = new Ingredient[3];
+    Ingredient[] ingredients;
 
     public Drink(String name, double price, boolean isWithAlcohol, Ingredient[] ingredients) {
         this.name = name;
