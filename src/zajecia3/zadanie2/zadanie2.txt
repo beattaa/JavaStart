@@ -1,0 +1,9 @@
+Klasa to szablon, za pomocą którego można zamodelować jakis byt.
+Obiekt to instancja klasy.
+Zmienna - to dana o konkretnym typie majaca (szybciej lub pozniej) konkretna wartosc
+Kazda zmienna musi miec okreslony typ...
+Jeżeli deklarację zmiennej poprzedzimy słowem final, to oznacza ze przypisana do niej wartosc nie moze juz zostac zmieniona
+W klasie moga sie znajdowac pola klasy, metody i konstruktory.
+Konstruktory są wywoływane przez operator new i slużą do tworzenia nowych obiektow
+Jeśli w klasie zdefiniowano chociaż jeden konstruktor to kompilator nie wygeneruje dla nas konstruktora domyślnego.
+...car1 i car2 to dwie referencje wskazujące na ten sam obiekt
