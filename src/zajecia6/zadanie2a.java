@@ -2,7 +2,7 @@ package zajecia6;
 
 import java.util.Scanner;
 
-public class zadanie2 {
+public class zadanie2a {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int suma = 0;
