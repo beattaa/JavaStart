@@ -19,5 +19,6 @@ public class Truck extends Car {
 
     public void turnOnAirCondition() {
         this.fuelConsumption += 0.8;
+        this.isAirCondition = true;
     }
 }

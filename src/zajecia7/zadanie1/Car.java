@@ -7,10 +7,6 @@ public class Car extends Vehicle {
         super(name, fuelTank, fuelConsumption);
     }
 
-    public void setAirCondition(boolean airCondition) {
-        isAirCondition = airCondition;
-    }
-
     public boolean isAirCondition() {
         return isAirCondition;
     }
