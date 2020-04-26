@@ -8,11 +8,12 @@ public class Check {
     public static boolean isTriangleBuilt(Point p1, Point p2, Point p3) {
         Section s1 = new Section(p1, p2);
         Section s2 = new Section(p1, p3);
-        double k1 = 1, k2 = 1;
-        if (s1.getA() != 0) {
+        double k1 = 0.00;
+        double k2 = 0.00;
+        if (s1.getA() != 0.00) {
             k1 = s2.getA() / s1.getA();
         }
-        if (s1.getB() != 0) {
+        if (s1.getB() != 0.00) {
             k2 = s2.getB() / s1.getB();
         }
         return k1 != k2;

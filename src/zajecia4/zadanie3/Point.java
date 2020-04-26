@@ -18,30 +18,30 @@ public class Point {
     }
 
     public boolean isInTheFirstQuarter(Point p) {
-        return p.getX() > 0 & p.getY() > 0;
+        return p.getX() > 0.00 & p.getY() > 0.00;
     }
 
     public boolean isInTheSecondQuarter(Point p) {
-        return p.getX() < 0 & p.getY() > 0;
+        return p.getX() < 0.00 & p.getY() > 0.00;
     }
 
     public boolean isInTheThirdQuarter(Point p) {
-        return p.getX() < 0 & p.getY() < 0;
+        return p.getX() < 0.00 & p.getY() < 0.00;
     }
 
     public boolean isInTheFourthQuarter(Point p) {
-        return p.getX() > 0 & p.getY() < 0;
+        return p.getX() > 0.00 & p.getY() < 0.00;
     }
 
     public boolean isLaidOnAxisX(Point p) {
-        return p.getX() == 0 & p.getY() != 0;
+        return p.getX() == 0.00 & p.getY() != 0.00;
     }
 
     public boolean isLaidOnAxisY(Point p) {
-        return p.getX() != 0 & p.getY() == 0;
+        return p.getX() != 0.00 & p.getY() == 0.00;
     }
 
     public boolean isLaidInTheMiddle(Point p) {
-        return p.getX() == 0 & p.getY() == 0;
+        return p.getX() == 0.00 & p.getY() == 0.00;
     }
 }
