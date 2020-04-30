@@ -1,7 +1,5 @@
 package zajecia8.zadanie4;
 
-import javax.rmi.PortableRemoteObject;
-
 public class Test {
     public static void main(String[] args) {
         Room livingRoom = new Room(18.4, 10);
