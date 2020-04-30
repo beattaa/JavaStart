@@ -1,4 +1,4 @@
-package zajecia8;
+package zajecia8.zadanie1;
 
 public class Dog {
     private final String name;

@@ -1,4 +1,4 @@
-package zajecia8;
+package zajecia8.zadanie1;
 
 import java.util.Scanner;
 
