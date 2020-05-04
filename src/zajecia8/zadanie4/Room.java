@@ -29,4 +29,10 @@ public class Room {
     public AirConditioner getAirConditioner() {
         return airConditioner;
     }
+
+    public void fireAirConditioner() {
+        double newTemp = airConditioner.fire(this.temperature, this.cubage);
+        setTemperature(newTemp);
+    }
 }
+
