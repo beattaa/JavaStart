@@ -25,7 +25,5 @@ public class Test {
         Company company2 = new Company("Company Sp. z o.o", "123-456-789");
         Payment payment3 = Shop.sellProduct(product1, company2);
         System.out.println(payment3);
-
-
     }
 }

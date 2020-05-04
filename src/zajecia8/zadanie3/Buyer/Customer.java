@@ -1,6 +1,9 @@
 package zajecia8.zadanie3.Buyer;
 
-public class Customer {
+import zajecia8.zadanie3.Payment.Payment;
+import zajecia8.zadanie3.Product;
+
+public abstract class Customer {
     private boolean isPremium;
 
     public boolean isPremium() {
@@ -10,4 +13,6 @@ public class Customer {
     public void makePremium() {
         this.isPremium = true;
     }
+
+    public abstract Payment createPayment(Product product);
 }
