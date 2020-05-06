@@ -1,4 +1,4 @@
-package zajecia9.zadanie2;
+package zajecia9.zadanie2.Vehicles;
 
 public class Car extends Vehicle {
     private final int seats;

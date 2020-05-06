@@ -1,4 +1,4 @@
-package zajecia9.zadanie2;
+package zajecia9.zadanie2.Rent;
 
 public class Person {
     private final String name;

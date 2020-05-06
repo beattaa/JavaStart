@@ -1,9 +1,12 @@
-package zajecia9.zadanie2;
+package zajecia9.zadanie2.Vehicles;
+
+import zajecia9.zadanie2.Directions;
+import zajecia9.zadanie2.Vehicles.Moveable;
 
 public abstract class Vehicle implements Moveable {
-    String name;
-    int year;
-    String direction;
+    public String name;
+    public int year;
+    public String direction;
 
     public Vehicle(String name, int year) {
         this.name = name;

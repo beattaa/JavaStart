@@ -1,4 +1,6 @@
-package zajecia9.zadanie2;
+package zajecia9.zadanie2.Rent;
+
+import zajecia9.zadanie2.Vehicles.Car;
 
 public class RentableCar extends Car implements Rentable {
     public static Person NONE = null;

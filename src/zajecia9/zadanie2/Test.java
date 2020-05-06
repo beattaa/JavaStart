@@ -1,5 +1,7 @@
 package zajecia9.zadanie2;
 
+import zajecia9.zadanie2.Rent.RentableCar;
+
 public class Test {
     public static void main(String[] args) {
         RentableCar rc1 = new RentableCar("Ford Mustang", 1978, 4, "1");

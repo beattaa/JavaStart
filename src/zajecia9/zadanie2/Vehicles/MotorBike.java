@@ -1,4 +1,4 @@
-package zajecia9.zadanie2;
+package zajecia9.zadanie2.Vehicles;
 
 public class MotorBike extends Vehicle {
     private final int maxSpeed;
