@@ -1,6 +1,6 @@
 package zajecia9.zadanie1.ComputerParts;
 
-public class ComputerPart {
+public abstract class ComputerPart {
     private final String model;
     private final String producer;
     private final String serialNo;

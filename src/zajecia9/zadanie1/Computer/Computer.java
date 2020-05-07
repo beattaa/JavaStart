@@ -27,10 +27,10 @@ public class Computer {
     }
 
     public void processorClockingUp(int increase) {
-        processor.clockingUp(increase);
+        processor.clockingUpProcessor(increase);
     }
 
     public void RAMClockingUp(int increase) {
-        RAM.clockingUp(increase);
+        RAM.clockingUpRAM(increase);
     }
 }
