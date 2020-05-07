@@ -3,19 +3,11 @@ package zajecia9.zadanie2.Rent;
 import zajecia9.zadanie2.Vehicles.Car;
 
 public class RentableCar extends Car implements Rentable {
-    public static Person NONE = null;
     private Person person;
     private boolean isRented;
-    private String id;
 
-    public RentableCar(String name, int year, int seats, String id) {
+    public RentableCar(String name, int year, int seats) {
         super(name, year, seats);
-        this.id = id;
-        this.person = NONE;
-    }
-
-    public String getId() {
-        return id;
     }
 
     @Override
@@ -36,15 +28,16 @@ public class RentableCar extends Car implements Rentable {
 
     @Override
     public void rent(String firstName, String lastName, String id) {
-        person = new Person(firstName, lastName);
-        this.id = id;
-        this.isRented = true;
-
+        if (isRented == false) {
+            person = new Person(firstName, lastName, id);
+            this.isRented = true;
+        } else
+            System.out.println("The car has been already rented");
     }
 
     @Override
     public void handOver() {
-        person = NONE;
+        person = null;
         this.isRented = false;
     }
 
