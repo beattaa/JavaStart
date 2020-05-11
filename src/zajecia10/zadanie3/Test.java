@@ -3,21 +3,22 @@ package zajecia10.zadanie3;
 public class Test {
     public static void main(String[] args) {
         NamesHolder namesHolder = new NamesHolder();
-        namesHolder.list.add("Beata");
-        namesHolder.list.add("Ada");
-        namesHolder.list.add("Ola");
-        String name1 = "beata";
+        namesHolder.add("Beata");
+        namesHolder.add("Ola");
+        namesHolder.add("Ala");
 
         try {
-            namesHolder.add(name1);
+            namesHolder.add("beata");
         } catch (NullPointerException | DuplicateException e) {
             System.out.println(e.getMessage());
         }
 
         try {
-            namesHolder.remove("ola");
+            namesHolder.remove("ala");
         } catch (NullPointerException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+
+        System.out.println(namesHolder);
     }
 }

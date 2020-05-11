@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NamesHolder {
-    List<String> list = new ArrayList<>();
+    private final List<String> list = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "NamesHolder{" +
+                "list=" + list.toString() +
+                '}';
+    }
 
     public void add(String name) {
         if (name == null)
@@ -36,13 +43,13 @@ public class NamesHolder {
     public void removeElement(String name) {
         if (name == null)
             throw new IllegalArgumentException("Provided string is null");
-        else
+        else {
             for (String str : list) {
                 if (str.equalsIgnoreCase(name))
                     list.remove(str);
                 break;
             }
-        throw new IllegalArgumentException("There's no such element in the array");
+        }
     }
 
     public int size() {
