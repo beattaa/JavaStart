@@ -25,11 +25,12 @@ public class NamesHolder {
     public boolean contains(String name) {
         if (name == null)
             throw new IllegalArgumentException();
-        else
+        else {
             for (String str : list) {
                 if (str.equalsIgnoreCase(name))
                     return true;
             }
+        }
         return false;
     }
 
@@ -45,9 +46,9 @@ public class NamesHolder {
             throw new IllegalArgumentException("Provided string is null");
         else {
             for (String str : list) {
-                if (str.equalsIgnoreCase(name))
+                if (str.equalsIgnoreCase(name)) {
                     list.remove(str);
-                break;
+                }
             }
         }
     }

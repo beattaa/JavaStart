@@ -14,7 +14,7 @@ public class Test {
         }
 
         try {
-            namesHolder.remove("ala");
+            namesHolder.remove("Ala");
         } catch (NullPointerException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
