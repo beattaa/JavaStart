@@ -42,16 +42,23 @@ public class NamesHolder {
     }
 
     public void removeElement(String name) {
+        String toRemove = null;
         if (name == null)
             throw new IllegalArgumentException("Provided string is null");
         else {
             for (String str : list) {
                 if (str.equalsIgnoreCase(name)) {
-                    list.remove(str);
+                    toRemove = str;
                 }
+            }
+            if (toRemove != null) {
+                list.remove(toRemove);
+            } else {
+                throw new NullPointerException("There's no such element in the list");
             }
         }
     }
+
 
     public int size() {
         return list.size();
