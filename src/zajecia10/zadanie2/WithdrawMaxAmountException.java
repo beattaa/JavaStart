@@ -1,4 +1,4 @@
-package zajacia10.zadanie2;
+package zajecia10.zadanie2;
 
 public class WithdrawMaxAmountException extends RuntimeException {
     public WithdrawMaxAmountException(double credit, double max) {

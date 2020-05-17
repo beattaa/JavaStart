@@ -1,4 +1,4 @@
-package zajacia10.zadanie2;
+package zajecia10.zadanie2;
 
 public class BankAccount {
     private static final double WITHDRAW_MAX_AMOUNT = 1000;

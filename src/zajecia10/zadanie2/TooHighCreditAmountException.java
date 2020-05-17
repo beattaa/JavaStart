@@ -1,4 +1,4 @@
-package zajacia10.zadanie2;
+package zajecia10.zadanie2;
 
 public class TooHighCreditAmountException extends RuntimeException {
     public TooHighCreditAmountException(double credit, double balance) {
