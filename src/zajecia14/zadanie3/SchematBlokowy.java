@@ -8,8 +8,7 @@ public class SchematBlokowy {
         int x = 0;
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Podaj x= ");
-        x = scanner.nextInt();
+
         while (Math.pow(x, 2) < 100) {
             sum += x;
             System.out.print("Podaj x= ");
