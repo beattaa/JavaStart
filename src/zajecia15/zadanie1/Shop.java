@@ -2,6 +2,7 @@ package zajecia15.zadanie1;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
@@ -26,9 +27,12 @@ public class Shop {
             grossSum = netSum.add(item.grossAmount());
         }
         DecimalFormat df = new DecimalFormat("#,###.00");
+        //PLN format
+        NumberFormat n = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        //nie dziala
         df.setCurrency(Currency.getInstance(Locale.getDefault()));
 
-        System.out.println("Sprzedaż Netto: " + df.format(netSum));
+        System.out.println("Sprzedaż Netto: " + n.format(netSum));
         System.out.println("Suma podatku VAT ze sprzedaży: " + df.format(vatSum));
         System.out.println("Suma sprzedaży Brutto: " + df.format(grossSum));
 
