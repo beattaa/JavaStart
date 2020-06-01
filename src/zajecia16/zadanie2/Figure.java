@@ -1,19 +1,19 @@
 package zajecia16.zadanie2;
 
 public enum Figure {
-    _2("dwójka", "Two of"),
-    _3("trójka ", "Three of "),
-    _4("czwórka ", "Four of "),
-    _5("piatka", "Five of"),
-    _6("szóstka", "Six of "),
-    _7("siódemka", "Seven of "),
-    _8("ósemka", "Eight of "),
-    _9("dziewiątka", "Nine of "),
-    _10("dziesiątka", "Ten of "),
-    walet("walet", "jack"),
-    dama("dama", "queen"),
-    król("król", "king"),
-    as("as", "ace");
+    DWOJKA("dwójka", "Two of"),
+    TROJKA("trójka ", "Three of "),
+    CZWORKA("czwórka ", "Four of "),
+    PIATKA("piatka", "Five of"),
+    SZOSTKA("szóstka", "Six of "),
+    SIODEMKA("siódemka", "Seven of "),
+    OSEMKA("ósemka", "Eight of "),
+    DZIEWIATKA("dziewiątka", "Nine of "),
+    DZIESIATKA("dziesiątka", "Ten of "),
+    WALET("walet", "jack"),
+    DAMA("dama", "queen"),
+    KROL("król", "king"),
+    AS("as", "ace");
 
     private final String polishName;
     private final String englishName;

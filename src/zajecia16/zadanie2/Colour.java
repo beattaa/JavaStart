@@ -1,10 +1,10 @@
 package zajecia16.zadanie2;
 
 public enum Colour {
-    Trefl("żołądź", "clubs"),
-    Karo("dzwonek", "diamonds"),
-    Kier("serce", "hearts"),
-    Pik("wino", "spades");
+    TREFL("żołądź", "clubs"),
+    KARO("dzwonek", "diamonds"),
+    KIER("serce", "hearts"),
+    PIK("wino", "spades");
 
     private final String polishName;
     private final String englishName;
