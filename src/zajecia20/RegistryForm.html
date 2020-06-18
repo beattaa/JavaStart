@@ -3,67 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Rejestracja</title>
-    <style type="text/css">
-        .myMargin {
-            margin: auto;
-        }
-    </style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
-<body class="myMargin">
-<form method="post" action="URL">
-    <h1>Rejestracja</h1>
-    <div class="form-group row">
-        <label for="exampleInputName" class="col-sm-2 col-form-label">Imię</label>
-        <input type="text" class="form-control" id="exampleInputName">
-    </div>
 
-    <div class="form-group row">
-        <label for="exampleInputSurname" class="col-sm-2 col-form-label">Nazwisko</label>
-        <input type="text" class="form-control" id="exampleInputSurname">
-    </div>
-
-    <div class="form-row">
-        <div class="col">
-            <label class="col-form-label col-sm-2 pt-0">Płeć</label>
-        </div>
-        <div class="col">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                       checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Kobieta
-                </label>
+<body>
+<section class="row">
+    <div class="col"></div>
+    <div class="col-5">
+        <form method="post" action="URL">
+            <h1 class="row font-weight-bold">Rejestracja</h1>
+            <div class="form-group row">
+                <label for="inputName">Imię</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Wpisz imię">
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1"
-                       checked>
-                <label class="form-check-label" for="exampleRadios2">
-                    Mężczyzna
-                </label>
+
+            <div class="form-group row">
+                <label for="inputSurname">Nazwisko</label>
+                <input type="text" class="form-control" id="inputSurname" placeholder="Wpisz nazwisko">
             </div>
-        </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Adres email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz adres email">
-    </div>
+            <div class="form-group row">
+                <div class="col">
+                    <label class="row">Płeć</label>
+                </div>
+                <div class="col">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked"
+                               name="exampleRadio1" checked>
+                        <label class="custom-control-label" for="defaultChecked">Kobieta</label>
+                    </div>
 
-    <div class="form-group">
-        <label for="exampleInputPassword">Hasło</label>
-        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Hasło">
-        <small id="passHelp" class="form-text text-muted">Min. 8 znaków.</small>
-    </div>
-    <div class="form-row">
-        <span class="form-group align-top">
-            <label for="exampleInputCity">Miasto</label>
-            <input type="text" class="form-control" id="exampleInputCity">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="exampleRadio2">
+                        <label class="custom-control-label" for="defaultUnchecked">Mężczyzna</label>
+                    </div>
+                </div>
+                <div class="col-8"></div>
+            </div>
+
+            <div class="form-group row">
+                <label for="emailInput">Adres email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Wpisz adres email">
+            </div>
+
+            <div class="form-group row">
+                <label for="passwordInput">Hasło</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Hasło">
+                <small id="passHelp" class="form-text text-muted">Min. 8 znaków.</small>
+            </div>
+
+            <div class="form-group row">
+        <span class="form-group align-top mr-3">
+            <label for="inputCity">Miasto</label>
+            <input type="text" class="form-control" id="inputCity">
         </span>
-        <span class="form-group align-top">
+                <span class="form-group align-top mr-3">
             <label>Województwo</label>
 
         <select class="custom-select" required="required">
@@ -74,28 +71,29 @@
         </select>
         </span>
 
-        <span class="form-group align-top">
-        <label for="exampleInputPostCode">Kod pocztowy</label>
-        <input type="text" class="form-control" id="exampleInputPostCode">
+                <span class="form-group align-top">
+        <label for="inputPostCode">Kod pocztowy</label>
+        <input type="text" class="form-control" id="inputPostCode">
     </span>
+            </div>
+            <div class="custom-control custom-checkbox row">
+                <input type="checkbox" class="custom-control-input" id="acceptCheckbox">
+                <label class="custom-control-label" for="acceptCheckbox">
+                    Akceptuje
+                    <a href="#" class=" stretched-link">regulamin</a>
+                </label>
+            </div>
+
+            <div class="custom-control custom-checkbox row">
+                <input type="checkbox" class="custom-control-input" id="marketingCheckbox">
+                <label class="custom-control-label" for="marketingCheckbox"> Wyrażam zgodę na otrzymywanie
+                    informacji marketingowych</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary row mt-2">Rejestruj</button>
+        </form>
     </div>
-
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-            Akceptuje regulamin
-        </label>
-    </div>
-
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
-        <label class="form-check-label" for="defaultCheck2">
-            Wyrażam zgodę na otrzymywanie informacji marketingowych
-        </label>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Rejestruj</button>
-
-</form>
+    <div class="col"></div>
+</section>
 </body>
 </html>
