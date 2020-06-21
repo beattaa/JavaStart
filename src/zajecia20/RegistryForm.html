@@ -51,7 +51,7 @@
 
             <div class="form-group row">
                 <label for="passwordInput">Hasło</label>
-                <input type="password" class="form-control" id="passwordInput" placeholder="Hasło">
+                <input type="password" class="form-control" id="passwordInput" minlength=8 placeholder="Hasło">
                 <small id="passHelp" class="form-text text-muted">Min. 8 znaków.</small>
             </div>
 
@@ -72,9 +72,10 @@
         </span>
 
                 <span class="form-group align-top">
-        <label for="inputPostCode">Kod pocztowy</label>
-        <input type="text" class="form-control" id="inputPostCode">
-    </span>
+            <label for="inputPostCode">Kod pocztowy</label>
+            <input type="text" class="form-control" id="inputPostCode" maxlength="6">
+         </span>
+
             </div>
             <div class="custom-control custom-checkbox row">
                 <input type="checkbox" class="custom-control-input" id="acceptCheckbox">
@@ -85,7 +86,7 @@
             </div>
 
             <div class="custom-control custom-checkbox row">
-                <input type="checkbox" class="custom-control-input" id="marketingCheckbox">
+                <input type="checkbox" class="custom-control-input" id="marketingCheckbox" checked>
                 <label class="custom-control-label" for="marketingCheckbox"> Wyrażam zgodę na otrzymywanie
                     informacji marketingowych</label>
             </div>
